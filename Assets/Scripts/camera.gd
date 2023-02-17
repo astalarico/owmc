@@ -1,4 +1,4 @@
-extends Node
+extends Camera2D
 
 
 # Declare member variables here. Examples:
