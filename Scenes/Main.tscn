@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="Main" type="YSort"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -19.0
+margin_top = -20.0
+margin_right = 308.0
+margin_bottom = 176.0
+color = Color( 0, 0, 0, 1 )
