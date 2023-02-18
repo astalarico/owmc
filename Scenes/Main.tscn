@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/control_camera.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/control_camera_ice.tscn" type="PackedScene" id=2]
 
 [node name="Main" type="Node2D"]
 
@@ -12,5 +13,11 @@ margin_bottom = 411.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="control_camera" parent="." instance=ExtResource( 1 )]
+margin_left = -13.0
 margin_right = 6.0
 margin_bottom = 4.0
+
+[node name="control_camera2" parent="." instance=ExtResource( 2 )]
+margin_left = 273.0
+margin_right = 370.4
+margin_bottom = 0.0
