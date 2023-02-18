@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Planet_1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scripts/init.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sprites/icon.png" type="Texture" id=3]
 
 [sub_resource type="Theme" id=1]
 
@@ -12,6 +14,7 @@ anchor_bottom = 1.053
 margin_right = 97.4
 margin_bottom = -19.08
 theme = SubResource( 1 )
+script = ExtResource( 2 )
 
 [node name="border" type="ColorRect" parent="."]
 margin_left = 11.0
@@ -27,9 +30,9 @@ margin_bottom = 194.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
-margin_left = 15.0
+margin_left = 16.0
 margin_top = 16.0
-margin_right = 180.0
+margin_right = 181.0
 margin_bottom = 191.0
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
@@ -40,6 +43,9 @@ render_target_update_mode = 3
 
 [node name="Planet_1" parent="ViewportContainer/Viewport" instance=ExtResource( 1 )]
 position = Vector2( 24, 12 )
+
+[node name="Sprite" type="Sprite" parent="ViewportContainer/Viewport"]
+texture = ExtResource( 3 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 185.0

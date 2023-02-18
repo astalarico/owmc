@@ -241,4 +241,6 @@ script = ExtResource( 4 )
 remote_path = NodePath("../../Camera2D")
 
 [node name="Sprite" type="Sprite" parent="Sprite"]
+position = Vector2( 2.90909, 2.43734 )
+scale = Vector2( 1.09091, 1.07617 )
 texture = ExtResource( 3 )
